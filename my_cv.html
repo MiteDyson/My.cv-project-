@@ -1,241 +1,36 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My.cv - Mitedyson</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-        header {
-            background: #000;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-            text-transform: uppercase;
-        }
-        #showcase {
-            background: url('showcase.png') no-repeat center center/cover;
-            height: 90vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: #050202;
-            margin-top: 60px; /* Ensure content doesn't hide behind fixed header */
-        }
-        #showcase h1 {
-            font-size: 50px;
-            margin: 0;
-            background: linear-gradient(to right, #000000, #000000); /* Multi-colored text */
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
-        #showcase p {
-            font-size: 20px;
-            z-index: 1;
-            position: relative;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .section {
-            padding: 60px 0; /* Reduced padding to avoid excessive space */
-            background-size: cover;
-            background-position: center;
-        }
-        #about {
-            background: none;
-        }
-        #education {
-            background: none;
-        }
-        #experience {
-            background: none;
-        }
-        #skills {
-            background: none;
-        }
-        #contact {
-            background: none;
-        }
-        .section h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
-            color: #000000;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            background: rgba(0, 0, 0, 0.5); /* Adding a semi-transparent overlay */
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .content div {
-            flex: 1;
-            min-width: 280px;
-            max-width: 45%;
-            margin: 20px;
-            padding: 20px;
-            background: #ffffff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            color: #333; /* Changing text color */
-        }
-        footer {
-            background: #000;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Portfolio - Mitesh Shetye</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>My.cv</h1>
         <nav>
             <ul>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="showcase">
-        <div class="container">
-            <h1>Mitedyson</h1>
-            <p>Aspiring Software Developer and Technology Enthusiast</p>
+    <section id="home">
+        <div class="intro">
+            <div class="intro-text">
+                <h1>Hello, I'm <span>Mitesh Shetye</span></h1>
+                <h2>Frontend Developer</h2>
+                <a href="Resume.pdf" download>Download CV</a>
+                <a href="mailto:miteshshetye-inft@atharvacoe.ac.in">Contact Info</a>
+            </div>
+            <div class="intro-image">
+                <img src="me.jpg" alt="Mitesh Shetye">
+            </div>
         </div>
     </section>
-
-    <div class="container">
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <div class="content">
-                <div>
-                    <p>My name is Mitedyson, a passionate software developer based in Mumbai. With a strong background in Information Technology and hands-on experience in software development, I am driven to create innovative solutions and excel in the tech industry.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="section">
-            <h2>Education</h2>
-            <div class="content">
-                <div>
-                    <p><strong>B.Tech/B.E. (Information Technology)</strong><br>
-                    Atharva College of Engineering, Mumbai<br>
-                    Score: 7.2%</p>
-                    <p><strong>Diploma (Computer Engineering)</strong><br>
-                    Zagdu Singh Chartitable Trust's Thakur Polytechnic<br>
-                    Score: 85.4%</p>
-                    <p><strong>Class X</strong><br>
-                    Maharashtra<br>
-                    Score: 83.4% in 2020</p>
-                </div>
-                <div>
-                    <p><strong>Certification Courses</strong><br>
-                    Tata Data Visualisation Empowering Business With Effective Insights Job Simulation (June 2024 - Present)<br>
-                    JPMorgan Chase & Co.: Excel Skills Job Simulation (February 2024 - Present)<br>
-                    Programming Using Java (November 2023 - Present)<br>
-                    Basics Of Python, Introduction To Data Science (November 2023 - Present)<br>
-                    Mastering Flutter (January 2024 - Present)<br>
-                    Data Structures And Algorithms Using Python - Part 1 (November 2023 - Present)<br>
-                    Data Structures And Algorithms Using Python - Part 2 (November 2023 - Present)<br>
-                    Building Levels Of VR (February 2023 - Present)<br>
-                    Python 3.4.3 Training (May 2024 - Present)</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="section">
-            <h2>Internships and Projects</h2>
-            <div class="content">
-                <div>
-                    <h3>Internships</h3>
-                    <p><strong>Vighnesh Inc.</strong> (July 2022 - August 2022)<br>
-                    Developed new features for the company's Android application using Java and Kotlin. Collaborated with UI/UX designers to enhance user interfaces. Built and maintained backend services with Django and Flask. Automated tasks with Python scripts and developed AR/VR applications using Unity and Unreal Engine. Gained hands-on experience in blockchain technology.</p>
-                </div>
-                <div>
-                    <h3>Projects</h3>
-                        <p><strong>Amazon Clone Project</strong> (May 2024)<br>
-                        Created an Amazon clone in Flutter, involving UI design, API integration, state management, authentication implementation, and performance optimization.</p>
-                        <p><strong>Android Firebase Project</strong> (June 2022 - August 2022)<br>
-                        Developed a Firebase project with login functionality in Android Studio. Gained proficiency in Android app development, Firebase Authentication, and user session management.</p>
-                    </div>
-                </div>
-            </section>
     
-            <section id="skills" class="section">
-                <h2>Skills and Achievements</h2>
-                <div class="content">
-                    <div>
-                        <ul>
-                            <li>Data Analysis</li>
-                            <li>Software Testing</li>
-                            <li>Software Development</li>
-                            <li>Android Software Developer</li>
-                            <li>Android Application Development</li>
-                            <li>Flutter Developer</li>
-                            <li>Video Editing</li>
-                            <li>Application Programming</li>
-                            <li>Unity3D</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section id="contact" class="section">
-                <h2>Contact Information</h2>
-                <div class="content">
-                    <div class="contact-info">
-                        <p><strong>Phone:</strong> +91-9876543210</p>
-                        <p><strong>Email:</strong> Refer Resume </p>
-                        <p><strong>Location:</strong> Mumbai</p>
-                    </div>
-                </div>
-            </section>
-            </div>
-            
-            <footer>
-                <p>&copy; 2024 Mitedyson. All Rights Reserved.</p>
-            </footer>
-            </body>
-            </html>
+</body>
+</html>
